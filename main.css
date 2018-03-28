@@ -1,0 +1,79 @@
+/* Fonts */
+/**
+* San Francisco font downloaded from: https://developer.apple.com/fonts/
+*/
+@font-face {
+  font-family: 'SF Pro Regular';
+  src: url('./fonts/SF-Pro-Text-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Regular Italic';
+  src: url('./fonts/SF-Pro-Text-RegularItalic.otf') format('opentype');
+}
+
+/* Main CSS */
+body {
+  font-family: 'SF Pro Regular';
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+}
+
+/**
+* Centering technique adapted from: https://stackoverflow.com/questions/20562860/how-do-i-vertically-center-an-h1-in-a-div
+*/
+#main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  width:100%;
+}
+
+/* Name */
+h1 {
+  font-size: 100px;
+  margin: 0;
+}
+
+/* Sub-heading */
+h5 {
+  color: grey;
+  font-family: 'SF Pro Regular Italic';
+  font-size: 20px;
+  text-align: center;
+}
+
+/* List of fun facts */
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  font-size: 28px;
+  margin: 1.5rem;
+}
+
+ul li a {
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  color: inherit;
+}
+
+ul li a:hover {
+  color: grey;
+}
+
+/* Hidden fun fact text */
+h4 {
+  font-size: 28px;
+  margin: 0;
+}
